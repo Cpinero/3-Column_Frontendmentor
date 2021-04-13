@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
@@ -15,6 +22,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 30px;
 }
 
 main .container {
@@ -28,11 +36,16 @@ main .container {
 }
 
 main .container__card-1, main .container__card-2, main .container__card-3 {
-  width: 200px;
-  padding: 40px;
+  width: 280px;
+  padding: 35px;
+}
+
+main .container__card-1 img, main .container__card-2 img, main .container__card-3 img {
+  margin-top: 10px;
 }
 
 main .container__card-1 h2, main .container__card-2 h2, main .container__card-3 h2 {
+  margin: 30px 0;
   font-family: "Big Shoulders Display", cursive;
   font-weight: 700;
   font-size: 2.3em;
@@ -41,16 +54,18 @@ main .container__card-1 h2, main .container__card-2 h2, main .container__card-3 
 }
 
 main .container__card-1 p, main .container__card-2 p, main .container__card-3 p {
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: .9em;
   line-height: 1.5rem;
   color: rgba(255, 255, 255, 0.75);
-  height: 140px;
+  height: 120px;
 }
 
 @media (min-width: 769px) {
   main .container__card-1 p, main .container__card-2 p, main .container__card-3 p {
     height: 180px;
+    margin-bottom: 30px;
   }
 }
 
@@ -60,6 +75,8 @@ main .container__card-1 a, main .container__card-2 a, main .container__card-3 a 
   border: 1px solid #fff;
   padding: 10px 20px;
   border-radius: 30px;
+  margin-bottom: 10px;
+  display: inline-block;
 }
 
 main .container__card-1 a:hover, main .container__card-2 a:hover, main .container__card-3 a:hover {
